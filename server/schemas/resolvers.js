@@ -21,7 +21,11 @@ const resolvers = {
           .select('-__v -password')
           .populate('friends')
           .populate('thoughts');
-      },
+      }
+    },  
+
+    Mutation: {
+      addUser: async () => {}
     }
   };
   
